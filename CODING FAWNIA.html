@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Halaman Web Sederhana</title>
+  <style>
+    /* Reset */
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      background: #f8f9fa;
+      color: #333;
+      padding: 0;
+    }
+    header{
+      background: #2b8aef;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    header h1{margin-bottom:.5rem}
+    nav ul{list-style:none;display:flex;justify-content:center;gap:1.5rem}
+    nav a{color:#fff;text-decoration:none;font-weight:bold;transition:.3s}
+    nav a:hover{color:#ffd43b}
+    main{max-width:960px;margin:2rem auto;padding:0 1rem}
+    section{background:#fff;margin-bottom:2rem;padding:1.5rem;border-radius:12px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.08);}
+    section h2{color:#2b8aef;margin-bottom:1rem}
+    article h3{margin-top:1rem;color:#444}
+    img{max-width:100%;border-radius:10px;margin-top:.5rem}
+    table{width:100%;border-collapse:collapse;margin-top:1rem}
+    th,td{border:1px solid #ddd;padding:.5rem;text-align:center}
+    th{background:#2b8aef;color:#fff}
+    form label{font-weight:bold}
+    input,textarea,button{
+      width:100%;padding:.7rem;margin-top:.5rem;margin-bottom:1rem;
+      border-radius:8px;border:1px solid #ccc;font-size:1rem
+    }
+    button{
+      background:#2b8aef;color:#fff;border:none;cursor:pointer;
+      transition:.3s;font-weight:bold
+    }
+    button:hover{background:#1d6cd5}
+    footer{
+      background:#2b8aef;color:#fff;text-align:center;padding:1rem;
+      margin-top:2rem;border-top-left-radius:20px;border-top-right-radius:20px
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Halaman Web Sederhana</h1>
+    <nav>
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Konten Utama -->
+  <main>
+    <!-- Beranda -->
+    <section id="beranda">
+      <h2>Beranda</h2>
+      <p>Selamat datang di halaman web sederhana ini.  
+      Halaman ini dibuat untuk latihan dasar HTML dan CSS.</p>
+      <img src="https://via.placeholder.com/800x300/2b8aef/ffffff?text=Halaman+Web+Sederhana" alt="Gambar Beranda">
+    </section>
+
+    <!-- Profil -->
+    <section id="profil">
+      <h2>Profil</h2>
+      <article>
+        <h3>Tentang Saya</h3>
+        <p>Halo, nama saya <strong>Fawnia</strong>. Saya sedang belajar membuat website dengan desain sederhana tapi tetap rapi dan enak dilihat.</p>
+      </article>
+      <article>
+        <h3>Data Singkat</h3>
+        <table>
+          <tr>
+            <th>Nama</th>
+            <th>Kelas</th>
+            <th>Hobi</th>
+          </tr>
+          <tr>
+            <td>Fawnia Ariadna Adristi</td>
+            <td>XII DKV</td>
+            <td>Voli,Desain,Melukis,Photography dan Videography</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda">
+
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda"></textarea>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Halaman Web Sederhana | Dibuat untuk latihan HEHEHE</p>
+  </footer>
+</body>
+</html>
+
